@@ -8,8 +8,8 @@ class IConta{
     void setValor(double v);
     double getValor();
 
-    virtual void depositar(double valor) = 0;
-    virtual void sacar(double valor) = 0;
+    virtual void depositar(double v) = 0;
+    virtual void sacar(double v) = 0;
 };
 
 #endif // ICONTA_H

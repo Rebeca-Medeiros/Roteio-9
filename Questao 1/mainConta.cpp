@@ -5,6 +5,8 @@
 
 using namespace std;
 
+//g++ mainConta.cpp ContaEspecial.cpp Conta.cpp IConta.cpp
+
 int main(){
     string n;
     double slm, sl, lt , vl;
@@ -13,7 +15,6 @@ int main(){
 
     Conta c = Conta(n, slm, nc, sl);
     ContaEspecial ce;
-    IConta ic;
 
     cout << "Digite o seu nome: " << endl;
     cin >> n;
@@ -30,10 +31,8 @@ int main(){
 
     c.setSalarioMensal(slm);
 
-    cout << "Digite o seu saldo: " << endl;
-    cin >> sl;
+    c.setSaldo(slm);
 
-    c.setSaldo(sl);
 
     cout << endl;
 
@@ -47,18 +46,18 @@ int main(){
             cout << "Digite o valor para sacar: " << endl;
             cin >> vl;
 
-            ic.setValor(vl);
+            c.setValor(vl);
 
-            c.sacar(ic.getValor());
+            c.sacar(c.getValor());
 
             break;
         case 2:
             cout << "Digite o valor para deposito: " << endl;
             cin >> vl;
 
-            ic.setValor(vl);
+            c.setValor(vl);
 
-            c.depositar(ic.getValor());
+            c.depositar(c.getValor());
 
             break;
         default:
@@ -72,10 +71,10 @@ int main(){
 
     switch (op){
         case 1:
-            c.definirlimite();
+            c.definirlimite(c.getSalarioMensal());
             break;
         case 2:
-            ce.definirlimite();
+            ce.definirlimite(ce.getSalarioMensal());
             break;
         default:
             break;

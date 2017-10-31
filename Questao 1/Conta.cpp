@@ -4,12 +4,27 @@
 
 using namespace std;
 
-Conta::Conta(std::string nomeCliente, double salarioMensal, int numeroConta, double saldo){
-  this->nomeCliente = nomeCliente;
-  this->salarioMensal = salarioMensal;
-  this->numeroConta = numeroConta;
-  this->saldo = saldo;
+Conta::Conta(){
+  setNomeCliente("");
+  setSalarioMensal(0.0);
+  setNumeroConta(0);
+  setSaldo(0.0);
 }
+
+Conta::Conta(std::string nomeCliente, double salarioMensal, int numeroConta, double saldo){
+  setNomeCliente(nomeCliente);
+  setSalarioMensal(salarioMensal);
+  setNumeroConta(numeroConta);
+  setSaldo(saldo);
+}
+
+/*void IConta::setValor(double v){
+  valor = v;
+}
+
+double IConta::getValor(){
+  return valor;
+}*/
 
 void Conta::setNomeCliente(string nome){
   nomeCliente = nome;
@@ -51,22 +66,22 @@ double Conta::getLimite(){
   return limite;
 }
 
-void Conta::depositar(double valor, double s){
-    s += valor;
-    cout << "O valor do deposito foi R$" << valor << endl;
+void Conta::depositar(double v){
+    double s;
+    s = getSaldo() + v;
+    cout << "O valor do deposito foi R$" << v << endl;
     cout << "E o novo saldo e R$" << s << endl;
 }
 
-void Conta::sacar(double valor, double s){
-    s -= valor;
-    cout << "O valor para retirada foi R$" << valor << endl;
+void Conta::sacar(double v){
+    double s;
+    s = getSaldo()- v;
+    cout << "O valor para retirada foi R$" << v << endl;
     cout << "E o novo saldo e R$" << s << endl;
 }
 
-void Conta::definirlimite(double sm, double lim){
-    lim= 2 * sm;
-    cout << "O limite da conta e R$" << limite;
+void Conta::definirlimite(double sm){
+    double lim;
+    setLimite(2 * sm);
+    cout << "O limite da conta e R$" << getLimite();
 }
-
-
-

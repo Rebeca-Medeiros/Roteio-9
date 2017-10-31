@@ -3,7 +3,8 @@
 
 using namespace std;
 
-void ContaEspecial::definirlimite(double sm, double lim){
-    lim = 3 * sm;
-    cout << "O limite para a conta especial e de R$" << lim;
+void ContaEspecial::definirlimite(double sm){
+    double lim;
+    setLimite(3 * sm);
+    cout << "O limite da conta e R$" << getLimite();
 }

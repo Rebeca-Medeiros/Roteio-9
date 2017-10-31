@@ -5,7 +5,7 @@
 
 class ContaEspecial: public Conta{
     public:
-        void definirlimite(double sm, double lim);
+        void definirlimite(double sm);
 };
 
 #endif // CONTAESPECIAL_h
