@@ -2,17 +2,16 @@
 #define IMOVEL_H
 
 #include <iostream>
+#include "Endereco.h"
 
 class Imovel{
     private:
-        std::string endereco;
+        Endereco ed;
     public:
-        void setEndereco(std::string ed);
-        std::string getEndereco();
+        void setEndereco(Endereco e);
+        Endereco getEndereco();
 
         virtual void getDescricao() = 0;
 };
-
-
 
 #endif // IMOVEL_H

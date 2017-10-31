@@ -3,10 +3,10 @@
 
 using namespace std;
 
-void Imovel::setEndereco(string ed){
-    endereco = ed;
+void Imovel::setEndereco(Endereco e){
+    ed = e;
 }
 
-string Imovel::getEndereco(){
-    return endereco;
+Endereco Imovel::getEndereco(){
+    return ed;
 }
