@@ -11,6 +11,6 @@ double Assalariado::getSalario(){
   return salario;
 }
 
-void Assalariado::calculaSalario(){
+double Assalariado::calculaSalario(){
   cout << "O salario do trabalhador e R$" << getSalario() << endl;
 }
