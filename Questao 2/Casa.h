@@ -1,6 +1,7 @@
 #ifndef CASA_H
 #define CASA_H
 
+#include <iostream>
 #include "Imovel.h"
 
 class Casa: public Imovel{
@@ -22,7 +23,7 @@ class Casa: public Imovel{
     void setAreaConstruida(double ac);
     double getAreaConstruida();
 
-    void getDescricao();
+    std::string getDescricao(std::string des);
 
 };
 

@@ -16,7 +16,7 @@ class Terreno: public Imovel{
 
     double Area(double cm, double lr);
 
-    void getDescricao();
+    virtual std::string getDescricao(std::string des);
 };
 
 #endif // TERRENO_H

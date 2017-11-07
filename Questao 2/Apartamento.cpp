@@ -27,13 +27,6 @@ int Apartamento::getNumeroDeVagasNaGaragem(){
   return numeroDeVagasNaGaragem;
 }
 
-void Apartamento::getDescricao(){
-  cout << "Logradouro: " << Endereco.getLogradouro() << endl;
-  cout << "Bairro: " << Endereco.getBairro() << endl;
-  cout << "Numero: " << Endereco.getNumero() << endl;
-  cout << "Cidade: " << Endereco.getCidade() << endl;
-  cout << "CEP: " << Endereco.getCep() << endl;
-  cout << "Posicao: " << Apartamento.getPosicao() << endl;
-  cout << "Valor do condominio: " << Apartamento.getValorDoCondominio() << endl;
-  cout << "Numero de vagas na garagem: " << Apartamento.getNumeroDeVagasNaGaragem() << endl;
+string Apartamento::getDescricao(string des){
+  return des;
 }

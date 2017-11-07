@@ -19,7 +19,7 @@ class Apartamento: public Imovel{
     void setNumeroDeVagasNaGaragem(int nv);
     int getNumeroDeVagasNaGaragem();
 
-    void getDescricao();
+    std::string getDescricao(std::string des);
 };
 
 #endif // APARTAMENTO_H

@@ -29,10 +29,6 @@ double Terreno::Area(double cm, double lr){
   return 1;
 }
 
-void Terreno::getDescricao(){
-  cout << "Logradouro: " << Endereco.getLogradouro() << endl;
-  cout << "Bairro: " << Endereco.getBairro() << endl;
-  cout << "Numero: " << Endereco.getNumero() << endl;
-  cout << "Cidade: " << Endereco.getCidade() << endl;
-  cout << "CEP: " << Endereco.getCep() << endl;
+string Terreno::getDescricao(string des){
+  return des;
 }

@@ -10,3 +10,7 @@ void Imovel::setEndereco(Endereco e){
 Endereco Imovel::getEndereco(){
     return ed;
 }
+
+void Imovel::setDescricao(string des){
+  descricao = des;
+}

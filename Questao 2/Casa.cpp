@@ -35,14 +35,6 @@ double Casa::getAreaConstruida(){
   return areaConstruida;
 }
 
-void Casa::getDescricao(){
-  cout << "Logradouro: " << Endereco.getLogradouro() << endl;
-  cout << "Bairro: " << Endereco.getBairro() << endl;
-  cout << "Numero: " << Endereco.getNumero() << endl;
-  cout << "Cidade: " << Endereco.getCidade() << endl;
-  cout << "CEP: " << Endereco.getCep() << endl;
-  cout << "Numero de pavimentos: " << Casa.getNumeroDePavimentos() << endl;
-  cout << "Quantidade de quartos: " << Casa.getQuantidadeDeQuartos() << endl;
-  cout << "Area do terreno: " << Casa.getAreaDoTerreno() << endl;
-  cout << "Area construida: " << Casa.getAreaConstruida() << endl;
+string Casa::getDescricao(string des){
+  return des;
 }
